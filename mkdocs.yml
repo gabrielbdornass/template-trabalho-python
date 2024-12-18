@@ -1,0 +1,27 @@
+site_name: "Template projeto python"
+
+theme:
+  name: "material"
+
+nav:
+  - Home: index.md
+  - Reference: reference.md
+
+
+extra:
+  icon: material
+  theme:
+    features:
+      - navigation.tabs  # For tabbed navigation
+      - navigation.top  # Top navigation bar
+  custom_filters: custom_filters.py
+
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: false
+  - macros
